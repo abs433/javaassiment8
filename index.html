@@ -1,159 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Arrays</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
-      <script>
-            // Q :1 & Q: 2
-//             1. Declare an empty array using JS literal notation to store
-// student names in future
-        var  studentNames =[    ];
-//                            
-// 3. Declare and initialize a strings array.
-var  stringArray =[ "Abu bakar ", "Ali ","Qabeer", "Asad"]
-                             
-// 4. Declare and initialize a numbers array.
-               var numerArray =[1,2,3,4,5]
+    
+<h1>Abu bakar Siddique</h1>
+<h2>CCO-2625048</h2>
+<p>assiment 8 IF ELSE</p>
 
-// 5. Declare and initialize a boolean array.
-                    var  booleanArray = [    true,false    ]
-// 6. Declare and initialize a mixed array.
-           var mixedArray =["Ali",1,2,3,true]
-                                 //  Q :7
-// 7. Declare and Initialize an array and store available
-// education qualifications in Pakistan (e.g. SSC, HSC, BCS,
-// BS, BCOM, MS, M. Phil., PhD). Show the listed
-// qualifications in your browser like:
-   var qualification =["Qualification <br>" , "SSc   <br>"," Hsc <br>","  BCS <br> ","BS <br>" ,"  BCOM <br>" ,"MS <br>"," M.phil <br>","PhD <br>"  ]
-   document.write ( qualification);
-                                    //   Q:08
-//               8. Write a program to store 3 student names in an array.Take
-// another array to store score of these three students.
-// Assume that total marks are 500 for each student, display
-// the scores & percentages of students like:
-var studentNames=["Abu bakar ", "Ali ", "Qabeer", "Asad"   ]
-var score =[ 340,320,360]
-totalMarks =[500]
-document.write( "Score of asad is"  +score [0] +"   percentage is " + score[0]/totalMarks*100+ "%" 
-+ "  <br>Score of Abu bakar  is"  +score [1] +"    percentage is " + score[1]/totalMarks*100+ "%" +
-" <br>Score of Attari is"  +score [2] +"    percentage is " + score[2]/totalMarks*100+ "%"   )
-                              //      Q: 09
-// 9. Initialize an array with color names. Display the array
-// elements in your browser.
- var colorNames = [ " <br>red "," Black  ","Blue"  ]
-document.write("<p>Color Names: " + colorNames.join(", ") + "</p>");  
-                                          // ( A ) 
-// a. Ask the user what color he/she wants to add to the
-// beginning & add that color to the beginning of the array.
-// Display the updated array in your browser.
-            var array =[  " red ",  "  Black  ",  "  Blue" ]
-            var userinp =prompt(" what color you wants to add to the beginning")
-               array.unshift(  userinp   )
- document.write(  "  <br> This is update array " + " :  " +array  )
-                                          // ( B )
-// b. Ask the user what color he/she wants to add to the end
-// & add that color to the end of the array. Display the
-// updated array in your browser.
- var add =[  " Red "," Black  ","Blue" ]
-            var userinp =prompt(" what color you wants to add to the end")
-               add.push(  userinp   )
- document.write(  "  <br> This is update array " + " :  " +add  )
-                                          // ( C )
-// c. Add two more color to the beginning of the array.
-// Display the updated array in your browser.
-var array =[  " Red "," Black  " ]
-               array.unshift( "white" ,"blue" );
- document.write(  "  <br> This is update array " + " :  " +array  )
-                                                // ( D )
-// d. Delete the first color in the array. Display the updated
-// array in your browser.
-var array =[  " Red "," Black  ",  "white ","Blue"]
-               array.shift( )
-               document.write(  "  <br> This is update array " + " :  " +array  )
-                                                //  ( E )
-// e. Delete the last color in the array. Display the updated
-// array in your browser.
-var array =[  " Red "," Black  ",  "white ","Blue"]
-      array.pop( )
-            document.write(  "  <br> This is update array " + " :  " +array  )
-                                                // ( F )
-// }f. Ask the user at which index he/she wants to add a color
-// & color name. Then add the color to desired
-// position/index. . Display the updated array in your
-// browser.
-    var color=["red","white"," blue","black"]
-               var  indexName=prompt(" which index you want to add")
-              var  colorName=prompt(" enrer your add color      ")
-              color.splice( indexName,0,colorName  );
-           document.write   (   " <h1> <br>This is updated array :  " + color + "<br>  </h1>" );
-                                          //      ( G )
-// g. Ask the user at which index he/she wants to delete
-// color(s) & how many colors he/she wants to delete. Then
-// remove the same number of color(s) from user-defined
-// position/index. 
-var color=["red","white"," red","black"]
-              var indexdlt=prompt(" which index you want to delete ");
-              var  colordlt=prompt("  How many you want to delete")
-                 color.splice(indexdlt,colordlt);
- document.write(  " <h1> <br>This is updated array :  " + color + "<br>  </h1>"  )
-                                                      //   Q;10
-// 10. Write a program to store student scores in an array &
-// sort the array in ascending order using Array’s sort
-// method.
-          var score =["320","230","480","120"  ]
-            document.write(   " <h1> <br> Score of student :  " + score + "<br>  </h1>"         )
-            score.sort(     ) 
-            document.write(    " <h1> Ordered score of student :  " +score+ "<br>  </h1>" )    
-              
-//                                                  Q :11
-// //       11. Write a program to initialize an array with city names.
-// // Copy 3 array elements from cities array to selectedCities  array.
-      var  cityNames =["karachi","Lahore","Islamabad","Quetta","Peshawar"  ]
-      document.write( " <h1> cities List :  " +cityNames+ "<br>  </h1>" )
-      var selectedCities  =  cityNames.slice( 2,5  )        
-      document.write(  " <h1> Selected Cities List  :  " +selectedCities+ "<br>  </h1>"   )
-                                                      //   "Q:12"
-      //  12. Write a program to create a single string from the below mentioned array:
-  
-          var array =  ["This","Is","My","Cat"];
-           var arr = array.join (   );
-                 console.log ( arr) ;  
-                                                //    Q:13
-// 13. Create a new array. Store values one by one in such a way
-// that you can access the values in the order in which they
-// were stored. (FIFO-First In First Out)
-var fifo = ["keyboard","Mouse","moniner","printer"]
-        console.log(fifo.shift());
-        console.log(fifo.shift());
-        console.log(fifo.shift());
-        console.log(fifo.shift());
-                         
-                                    // Q:14
-// 14. Create a new array. Store values one by one in such a way
-// that you can access the values in reverse order. (Last In-
-// First Out)
-var fifo = ["keyboard","Mouse","moniner","printer"]
+
+
+
+    <script>
+        //Q No: 1.
         
-      console.log(fifo.pop());
-      console.log(fifo.pop());
-      console.log(fifo.pop());
-      console.log(fifo.pop());
-                              //      Q:15
-// 15. Write a program to store phone manufacturers (Apple,
-// Samsung, Motorola, Nokia, Sony & Haier) in an array.
-// Display the following dropdown/select menu in your
-// // browser using document.write() method:
- var  phoneItems =[  "<br>Apple", " <br>Samsung", "  <br>  Motorola", "<br>  Nokia", "  <br>  Sony & Haier " ]
-  document.write(  "<h1> <br> Dropdown menu :  " +  phoneItems + "</h1>")
-      
+        var code =prompt(" Enter your code or number ")
+            if (code >= 65  &&  code <=90   ){
+                  alert(" your have typed a capital letter")
+              }   else if  (code >= 97 &&  code <=122   ){
+                  alert(" your have typed a small letter")
+              } else if  (code >= 48 &&  code <=57   ){
+                  alert(" your have typed a number")
+              }
 
 
-      </script>
+
+
+// Q No :2. 
+
+ 
+             var num1 = +prompt("Enter first Integar");
+             var num2 = +prompt("Enter second Integar");
+if (num1> num2) {
+             alert(num1 + " is larger than" + num2)
+         }
+else if (num1 < num2 ) {
+             alert(num2 + " is larger than" + num1)
+                 }
+ else alert(num1 + " and " + num2 + " are equal")
+
+
+
+
+//  Q No :3.
+               
+         var num = prompt ("   Enter your number!  ")
+if (num >   0  ){
+                 document.write(" Positive Number   ")
+             }
+else if ( num <   0   ){
+                  document.write(" Negtive Number   ")
+              }
+else if ( num ==   0   ){
+                document.write(" Zero   ")
+            }
+
+
+//Q No : 4. 
+
+     var  character = prompt ("  Enter the vowel  ")
+    if (  character === 'a' || character === 'e' || character === 'i' || character === 'o' || character === 'u'  ){
+             alert(" TRUE")
+      document.write("  <br> TRUE  ")
+                     }
+    else {
+     alert(" FALSE")
+      document.write("  <br> FALSE  ")
+                                                    }
+
+
+
+
+//Q No : 5. 
+
+                 var strongPassword = "123"
+                 var password = prompt ( " Enter  your password " )
+          if ( password  ===  null  ||  password === " "  ){
+             alert(" plz Enter your correct password   ")
+        } else if ( password === strongPassword  ){
+              alert(" correct password")
+          }
+else {
+     alert('Enter Correct Password')
+ }
+
+
+
+
+
+//Q NO : 6. 
+ 
+              
+        var hour = 13;
+                  var greeting = prompt ("  Enter your number   ")
+if (greeting <  hour  ) {
+                  alert("  good morning")
+document.write("  <br> Good Morning   ")
+   }
+else {
+             alert(" good evining ")
+ document.write("  <br> Good Evening    ")
+              }
+
+
+
+ // Q NO :7                                   
+
+                                                                        var time = +prompt("What time is it?");
+if(time >= 0000 && time <1200){
+                                                                                alert("Good Morning");
+}
+else if (time >= 1200 && time <1700){
+                                                                                alert("Good Afternoon");
+}
+else if(time >= 1700 && time <2100){
+                                                                                alert("Good Evining");
+}
+else if(time >= 2100 && time <2359){
+                                                                                alert("Good Night");
+}
+
+        </script>
 </body>
-
+</html>
+    </script>
+</body>
 </html>
